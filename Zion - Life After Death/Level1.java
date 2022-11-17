@@ -76,5 +76,12 @@ public class Level1 extends World
         homeButton.setLocation(44,40);
         pauseButton.setLocation(102,36);
         pauseButton.setLocation(108,38);
+        volButton.setLocation(762,552);
+        demon.setLocation(176,344);
+        demon.setLocation(172,325);
+        demon.setLocation(170,322);
+        removeObject(demon);
+        demon4.setLocation(324,332);
+        demon4.setLocation(332,325);
     }
 }

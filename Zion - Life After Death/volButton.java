@@ -12,13 +12,14 @@ public class volButton extends Actor
      * Act - do whatever the volButton wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
+    //private GreenfootSound gameMusic;
     private GreenfootSound sound = new GreenfootSound("playGame.wav");
     private boolean isMuted;
     public void act()
     {
         if(Greenfoot.mouseClicked(this)) 
         {
+            //gameMusic = new GreenfootSound("playGame.wav");
             isMuted =! isMuted;
             updateState();
         }
@@ -26,6 +27,7 @@ public class volButton extends Actor
     
     private void updateState()
     {
+        //gameMusic.playLoop();
         if(isMuted)
         {
             setImage("volumeButtonMute.png");
@@ -33,7 +35,7 @@ public class volButton extends Actor
         }
         else
         {
-            setImage(volButton());
+            setImage("volumeButton.png");
             sound.play();
         }
     }
