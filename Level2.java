@@ -26,17 +26,17 @@ public class Level2 extends World
      */
     private void prepare()
     {
-        demon demon = new demon();
+        Demon demon = new Demon();
         addObject(demon,447,230);
         demon.setLocation(343,339);
         demon.setLocation(294,339);
-        demon demon2 = new demon();
+        Demon demon2 = new Demon();
         addObject(demon2,538,304);
         demon2.setLocation(487,326);
         demon2.setLocation(669,325);
-        demon demon3 = new demon();
+        Demon demon3 = new Demon();
         addObject(demon3,669,325);
-        demon demon4 = new demon();
+        Demon demon4 = new Demon();
         addObject(demon4,460,320);
         demon4.setLocation(467,333);
         demon2.setLocation(604,340);
@@ -85,10 +85,10 @@ public class Level2 extends World
         demon4.setLocation(332,325);
         demon4.setLocation(361,240);
         demon2.setLocation(496,336);
-        demon demon5 = new demon();
+        Demon demon5 = new Demon();
         addObject(demon5,659,194);
         demon5.setLocation(688,245);
-        demon demon6 = new demon();
+        Demon demon6 = new Demon();
         addObject(demon6,740,328);
         demon6.setLocation(776,316);
         removeObject(demon6);
@@ -99,12 +99,12 @@ public class Level2 extends World
         demon5.setLocation(688,246);
         demon5.setLocation(681,233);
         demon5.setLocation(679,238);
-        block block = new block();
+        SmallBlock block = new SmallBlock();
         addObject(block,191,312);
         block.setLocation(243,318);
-        block block2 = new block();
+        SmallBlock block2 = new SmallBlock();
         addObject(block2,336,277);
-        block block3 = new block();
+        SmallBlock block3 = new SmallBlock();
         addObject(block3,677,280);
         demon2.setLocation(496,333);
         demon5.setLocation(675,252);
@@ -126,5 +126,36 @@ public class Level2 extends World
         pauseButton.setLocation(115,36);
         pauseButton.setLocation(108, 38);
         volButton.setLocation(762, 552);
+        Zion zion = new Zion();
+        addObject(zion,42,320);
+        Ground ground = new Ground();
+        addObject(ground,789,459);
+        SmallBlock smallBlock4 = new SmallBlock();
+        addObject(smallBlock4,55,465);
+        OraclePts oraclePts = new OraclePts();
+        addObject(oraclePts,684,256);
+        OraclePts oraclePts2 = new OraclePts();
+        addObject(oraclePts2,357,247);
+        OraclePts oraclePts3 = new OraclePts();
+        addObject(oraclePts3,488,66);
+        OraclePts oraclePts4 = new OraclePts();
+        addObject(oraclePts4,488,66);
+        OraclePts oraclePts5 = new OraclePts();
+        addObject(oraclePts5,89,134);
+        volButton.setLocation(762,550);
+        pauseButton pauseButton2 = new pauseButton();
+        addObject(pauseButton2,762,550);
+        volButton.setLocation(665,484);
+        removeObject(volButton);
+        pauseButton2.setLocation(755,564);
+        OraclePts oraclePts6 = new OraclePts();
+        addObject(oraclePts6,698,425);
+        Demon demon7 = new Demon();
+        addObject(demon7,266,442);
+        OraclePts oraclePts7 = new OraclePts();
+        addObject(oraclePts7,175,296);
+        removeObject(pauseButton2);
+        volButton volButton2 = new volButton();
+        addObject(volButton2,755,557);
     }
 }

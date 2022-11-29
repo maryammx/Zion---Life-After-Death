@@ -19,15 +19,36 @@ public class NewGame extends Actor
         {
             isClicked =! isClicked;
             updateState();
+            
         }
+        //transitionToNewGame();
+        stopMusic();
+    }
+    
+    public void stopMusic() {
+        if(Greenfoot.mouseClicked(this)) {
+        getWorld().stopped();
+        Greenfoot.setWorld(new Level1());
+    }
     }
 
+    public void transitionToNewGame() {
+        //getWorld.stopped();
+        if (Greenfoot.mouseClicked(this)) {
+            //etWorld.stopped();
+            World Level1 = new Level1();
+            Level1.started();
+            Greenfoot.setWorld(Level1);
+        }
+    }
+    
     private void updateState()
     {
 
         if(isClicked)
         {
             setImage("ng2.png");
+            
         }
         else
         {

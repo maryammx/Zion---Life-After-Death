@@ -5,5 +5,8 @@ comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ pauseButton\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
-comment2.target=pauseButton()
-numComments=3
+comment2.target=void\ pause()
+comment3.params=
+comment3.target=pauseButton()
+comment3.text=public\ void\ transitionToPauseMenu()\ {\r\n\ \ \ \ //getWorld.stopped();\r\n\ \ \ \ if\ (Greenfoot.mouseClicked(this))\ {\r\n\ \ \ \ //setWorld.stopped();\r\n\ \ \ \ World\ pauseScreen\ \=\ new\ pauseScreen();\ //edit\ this\r\n\ \ \ \ pauseScreen.started();\r\n\ \ \ \ Greenfoot.setWorld(pauseScreen);\r\n\ \ \ \ }\r\n}
+numComments=4

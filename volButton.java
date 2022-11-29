@@ -15,11 +15,16 @@ public class volButton extends Actor
     //private GreenfootSound gameMusic;
     private GreenfootSound sound = new GreenfootSound("background2.wav");
     private boolean isMuted;
+    private boolean musicStarted;
     public void act()
     {
+        if (! musicStarted)
+        {
+            sound.playLoop();
+            musicStarted = true;
+        }
         if(Greenfoot.mouseClicked(this)) 
         {
-            //gameMusic = new GreenfootSound("playGame.wav");
             isMuted =! isMuted;
             updateState();
         }
@@ -27,7 +32,7 @@ public class volButton extends Actor
     
     private void updateState()
     {
-        //gameMusic.playLoop();
+        sound.playLoop();
         if(isMuted)
         {
             setImage("volumeButtonMute.png");

@@ -21,7 +21,7 @@ public class homeButton extends Actor
     public void transitionToMainMenu() {
         //getWorld.stopped();
         if (Greenfoot.mouseClicked(this)) {
-            //etWorld.stopped();
+            //setWorld.stopped();
             World menu = new menu();
             menu.started();
             Greenfoot.setWorld(menu);

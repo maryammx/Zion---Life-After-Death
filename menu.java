@@ -22,6 +22,8 @@ public class menu extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1); 
         menuSound = new GreenfootSound("background1.wav");
+        started();
+        stopped();
         prepare();
     }
     
@@ -31,7 +33,6 @@ public class menu extends World
      */
     public void started() {
         menuSound.playLoop();
-        
     }
     
     public void stopped() {
